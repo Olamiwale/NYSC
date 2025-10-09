@@ -24,5 +24,5 @@ Post.init(
   }
 );
 
-Post.belongsTo(User, { foreignKey: "userId", as: "user" });
-User.hasMany(Post, { foreignKey: "userId", as: "posts" });
+Post.belongsTo(User, { foreignKey: "userId", onDelete: "CASCADE"});
+User.hasMany(Post, { foreignKey: "userId"});

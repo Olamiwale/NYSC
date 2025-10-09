@@ -6,7 +6,11 @@ const SECRET_KEY = process.env.JWT_SECRET || "secretkey123";
 
 export const protect = (req: any, res: Response, next: NextFunction) => {
 
-  const token = req.headers("Authorization")?.replace("Bearer ", "");
+  const token = req.header("Authorization")?.replace("Bearer ", "");
+
+  //const token = req.header("Authorization")?.replace("Bearer ", ""); //another way to get the token from the header
+
+
   if (!token) return res.status(401).json({ msg: "No token" });
 
   try {
