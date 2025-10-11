@@ -23,6 +23,9 @@ Backend Packages
 * bcryptjs
 * nodemon (dev)
 
+Installing Nodemon ---- 'npm install --save-dev nodemon ts-node typescript'
+
+
 
 
 Connecting Postgres DB

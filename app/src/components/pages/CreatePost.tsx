@@ -16,7 +16,7 @@ export default function CreatePost() {
 
   const token = localStorage.getItem("token");
 
-  
+  const navigate = useNavigate();
 
   const createPost = async () => {
     if (!content.trim()) return alert("Post cannot be empty");
@@ -40,6 +40,12 @@ export default function CreatePost() {
     }
   };
 
+  const logOut = () => {
+    localStorage.removeItem("token");
+    alert("Logout successful!");
+    navigate("/");
+  }
+
   return (
     <div className="flex flex-col gap-4 items-center mt-[10%]">
       <h1 className="text-2xl font-bold mb-10">POSTS</h1>
@@ -50,7 +56,15 @@ export default function CreatePost() {
         value={content}
         onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setContent(e.target.value)}
       />
-      <Button className="mt-10" onClick={createPost}>Submit</Button>
+
+      <div className="flex gap-10">
+         <Button className="mt-10 w-[150px]" onClick={createPost}>Submit</Button>
+      <Button className="mt-10 w-[150px] bg-red-500" onClick={logOut}>Logout</Button>
+      </div>
+     
+
+
+
 
       <div className="mt-6 flex flex-col gap-3">
         <h2 className="text-xl font-semibold">Posts</h2>

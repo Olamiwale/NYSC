@@ -1,5 +1,7 @@
 import { Sequelize } from "sequelize";
 import dotenv from "dotenv";
+//import { User } from "../models/user.model"; 
+//import { Post } from "../models/post.model";
 
 dotenv.config();
 
@@ -26,3 +28,5 @@ export const connectDB = async () => {
     console.error("Unable to connect to the database:", error);
   } 
 };
+
+

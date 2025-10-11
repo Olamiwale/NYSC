@@ -52,37 +52,3 @@ export default function Register() {
 
 
 
-
-/*
-
-import { useState, type ChangeEvent } from "react";
-import { Button } from "@/components/ui/button";
-
-const baseUrl = "http://localhost:5000";
-
-export default function Register() {
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
-
-  const register = async () => {
-    const res = await fetch(`${baseUrl}/auth/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-    alert(JSON.stringify(await res.json(), null, 2));
-  };
-
-  return (
-    <div className="flex flex-col gap-4 items-start">
-      <h1 className="text-2xl font-bold">REGISTER</h1>
-      <input type="text" name="name" placeholder="Name" className="border rounded p-2 w-64" onChange={handleChange} />
-      <input type="email" name="email" placeholder="Email" className="border rounded p-2 w-64" onChange={handleChange} />
-      <input type="password" name="password" placeholder="Password" className="border rounded p-2 w-64" onChange={handleChange} />
-      <Button onClick={register}>Register</Button>
-    </div>
-  );
-}
-*/
