@@ -6,6 +6,7 @@ const Register = lazy(() => import("./components/pages/RegisterPage"));
 const Login = lazy(() => import("./components/pages/LoginPage"));
 const CreatePost = lazy(() => import("./components/pages/CreatePost"));
 const ShowPosts = lazy(() => import("./components/pages/ShowPosts"));
+const HomePage = lazy(() => import("./components/pages/HomePage"));
 
 export const router = createBrowserRouter([
   {
@@ -13,9 +14,7 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        index: true,
-        element: (
-          <Suspense fallback={<p>Loading...</p>}>
+        index: true,        element: ( <Suspense fallback={<p>Loading...</p>}>
             <Register />
           </Suspense>
         ),
@@ -42,6 +41,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<p>Loading...</p>}>
             <ShowPosts />
+          </Suspense>
+        ),
+      },
+      {
+        path: "home",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <HomePage />
           </Suspense>
         ),
       },
