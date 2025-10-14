@@ -4,25 +4,25 @@ import { AppSidebar } from "../sidebar/AppSidebar";
 
 export default function HomePage() {
   return (
-    <div className="flex justify-between w-[70%] mx-auto bg-gray-900">
+    <div className="flex min-h-screen bg-gray-950 text-white">
 
       {/*Side Bar*/}
-      <div className="border-r-1 p-2 w-[200px]">
+      <div className="">
         <SidebarProvider>
       <AppSidebar />
-      <main>
       
-    
-      </main>
     </SidebarProvider>
       </div>
 
       {/*Main Content*/}
-      <Post />
-
-
-      {/*Right Side Bar*/}
-      <div className="border-l-1 p-2">Right Side Bar</div>
+      <div className="ml-[300px]">
+       <Post /> 
+      </div>
+    
+    
     </div>
   );
 }
+
+
+
