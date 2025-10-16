@@ -20,9 +20,8 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <div className=" h-screen bg-gradient-to-b from-gray-900 to-black border-r border-gray-800 flex flex-col justify-between p-2">
+    <div className="h-screen bg-gradient-to-b from-gray-900 to-black border-r border-gray-800 flex flex-col justify-between p-2 w-[200px]">
 
-      
       <div className="flex items-center flex flex-col mt-10 gap-2 mt-2">
         <div className="w-10 h-10 bg-green-500 rounded-xl"></div>
         <p className="text-white text-sm font-semibold tracking-wide">NYSC Connect</p>
@@ -35,7 +34,7 @@ export function AppSidebar() {
             <SidebarMenuButton asChild>
               <a
                 href={item.url}
-                className="flex items-center gap-3 px-4 py-2   rounded-lg "
+                className="flex items-center gap-3 px-4 py-2 rounded-lg "
               >
                 <item.icon className="w-10 h-10" />
                 <span className="text-sm font-medium">{item.title}</span>

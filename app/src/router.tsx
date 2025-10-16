@@ -9,6 +9,7 @@ const CreatePost = lazy(() => import("./components/pages/CreatePost"));
 const ShowPosts = lazy(() => import("./components/pages/ShowPosts"));
 const Home = lazy(() => import("./components/pages/Home"));
 const SignIn = lazy(()=> import ('./components/pages/SignIn'));
+const Profile = lazy(()=> import ('./components/pages/Profile'))
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "register",
         element: ( <Suspense fallback={<p>Loading...</p>}> <Register />  </Suspense> ),
+      },
+      {
+        path: "profile",
+        element: ( <Suspense fallback={<p>Loading...</p>}> <Profile />  </Suspense> ),
       },
     ],
   },
