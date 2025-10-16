@@ -1,4 +1,4 @@
-import { Calendar, Home, Search, Settings, Briefcase } from "lucide-react";
+import { Calendar, Home, Search, Settings, Briefcase, Image } from "lucide-react";
 
 import {
   Sidebar,
@@ -14,18 +14,17 @@ const items = [
   { title: "Jobs", url: "#", icon: Briefcase },
   { title: "Events", url: "#", icon: Calendar },
   { title: "Explore", url: "#", icon: Search },
+  { title: "Profile", url: "#", icon: Image },
   { title: "Settings", url: "#", icon: Settings },
 ];
 
 export function AppSidebar() {
   return (
-    <div className="fixed top-0 left-0 h-screen w-[200px] bg-gradient-to-b from-gray-900  to-black border-r border-gray-800 flex flex-col justify-between p-4">
+    <div className=" h-screen bg-gradient-to-b from-gray-900 to-black border-r border-gray-800 flex flex-col justify-between p-2">
 
       
-      <div className="flex items-center gap-2 mt-2">
-        <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center font-extrabold text-white text-xl shadow-md">
-          N
-        </div>
+      <div className="flex items-center flex flex-col mt-10 gap-2 mt-2">
+        <div className="w-10 h-10 bg-green-500 rounded-xl"></div>
         <p className="text-white text-sm font-semibold tracking-wide">NYSC Connect</p>
       </div>
 
@@ -47,15 +46,12 @@ export function AppSidebar() {
       </SidebarMenu>
 
       
-      <div className="border-t border-gray-800 pt-4 flex items-center gap-3 px-2">
-        <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
-          P
-        </div>
+      <div className="border-t border-gray-800 flex flex-col pt-4 mb-10 flex items-center gap-3    
+         px-2">
+        <div className="w-10 h-10 rounded-xl bg-green-600"></div>
+
         <div className="flex flex-col">
           <p className="text-sm font-semibold text-white">Paul Olawale</p>
-          <a href="#" className="text-xs text-gray-400 hover:text-green-400 transition">
-            View Profile
-          </a>
         </div>
       </div>
     </div>

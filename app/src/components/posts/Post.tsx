@@ -29,10 +29,10 @@ const posts = [
 
 
   return (
-    <div className="flex flex-col justify-center items-center ml-[-80px] gap-6 mt-10 px-6">
+    <div className="flex flex-col justify-center items-center gap-6 mt-10 px-6">
 
        
-      <div className="flex w-[400px] items-center gap-4 bg-gray-800 p-3 rounded-xl shadow-md">
+      <div className="flex items-center gap-4 bg-gray-800 p-3 rounded-xl shadow-md">
         <div className="rounded-full bg-green-600 w-12 h-12 flex items-center justify-center text-white font-bold">
           P
         </div>
