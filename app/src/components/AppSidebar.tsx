@@ -10,11 +10,11 @@ import {
 
 // Menu items.
 const items = [
-  { title: "Home", url: "#", icon: Home },
+  { title: "Home", url: "/home", icon: Home },
   { title: "Jobs", url: "#", icon: Briefcase },
   { title: "Events", url: "#", icon: Calendar },
   { title: "Explore", url: "#", icon: Search },
-  { title: "Profile", url: "#", icon: Image },
+  { title: "Profile", url: "/profile", icon: Image },
   { title: "Settings", url: "#", icon: Settings },
 ];
 
@@ -34,8 +34,7 @@ export function AppSidebar() {
             <SidebarMenuButton asChild>
               <a
                 href={item.url}
-                className="flex items-center gap-3 px-4 py-2 rounded-lg "
-              >
+                className="flex items-center gap-3 px-4 py-2 rounded-lg">
                 <item.icon className="w-10 h-10" />
                 <span className="text-sm font-medium">{item.title}</span>
               </a>
