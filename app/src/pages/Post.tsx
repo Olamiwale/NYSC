@@ -1,4 +1,4 @@
-
+import { Input } from "@/components/ui/input";
 
 export default function Post() {
 
@@ -29,40 +29,34 @@ const posts = [
 
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6 mt-10 px-6">
+    <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
 
        
-      <div className="flex items-center gap-4 bg-gray-800 p-3 rounded-xl shadow-md">
-        <div className="rounded-full bg-green-600 w-12 h-12 flex items-center justify-center text-white font-bold">
+      <div className="flex items-center gap-4 bg-gray-800 p-3 w-full rounded-xl mb-5">
+        <div className="rounded-full bg-green-600 w-12 h-12 flex items-center justify-center">
           P
         </div>
-        <input
-          placeholder="What's on your mind?"
-          className="flex-1 bg-gray-700 text-white placeholder-gray-400 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500"
-        />
+        <Input placeholder="what's in your mind......" />
       </div>
 
 
        {posts.map((post) => (
         <div
           key={post.id}
-          className="bg-gray-800 rounded-2xl p-5 shadow-lg hover:shadow-green-900/20 transition-all"
-        >
-          <div className="flex items-center gap-3 mb-3">
-            <img
-              src=""
-              className="w-10 h-10 rounded-full bg-gray-600"
-              alt="avatar"
-            />
-            <div>
-              <p className="font-semibold text-white text-sm">
-                {post.username}
-              </p>
-              <p className="text-xs text-gray-400">
-                {post.location} • {post.batch}
-              </p>
+          className="bg-gray-800 rounded-2xl p-5 mb-8">
+          <div className="flex items-center gap-3 mb-4">
+
+            <img src="" className="w-10 h-10 rounded-full bg-gray-600"        alt="avatar" />
+
+            <div className="flex gap-2">
+              <p className="font-semibold text-white text-sm"> {post.username}</p>
+              <p className="font-semibold text-sm text-gray-400"> | {post.location} | {post.batch}</p>
             </div>
+
           </div>
+
+
+
           <p className="text-gray-200 text-sm mb-4 leading-relaxed">
             {post.content}
           </p>

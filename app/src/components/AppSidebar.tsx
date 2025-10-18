@@ -8,12 +8,12 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-// Menu items.
+
 const items = [
   { title: "Home", url: "/home", icon: Home },
-  { title: "Jobs", url: "#", icon: Briefcase },
-  { title: "Events", url: "#", icon: Calendar },
-  { title: "Explore", url: "#", icon: Search },
+  { title: "Jobs", url: "/jobs", icon: Briefcase },
+  { title: "Events", url: "/events", icon: Calendar },
+  { title: "Explore", url: "/explore", icon: Search },
   { title: "Profile", url: "/profile", icon: Image },
   { title: "Settings", url: "#", icon: Settings },
 ];
