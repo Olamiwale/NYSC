@@ -53,8 +53,7 @@ export default function Events() {
         {events.map((event, i) => (
           <div
             key={i}
-            className="border border-gray-800 bg-gray-900  rounded-xl p-5"
-          >
+            className="border border-gray-800 bg-gray-900  rounded-xl p-5">
             <h2 className="text-lg font-semibold mb-2">{event.title}</h2>
 
             <div className="flex flex-wrap gap-4 text-gray-400 text-sm mb-2">

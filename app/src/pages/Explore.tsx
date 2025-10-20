@@ -5,9 +5,16 @@ export default function Explore() {
     { tag: "#SDGProject", count: "2.1k posts" },
     { tag: "#BatchC2025", count: "1.8k posts" },
     { tag: "#NYSCJobs", count: "900 posts" },
+    { tag: "#SDGProject", count: "2.1k posts" },
+    { tag: "#BatchC2025", count: "1.8k posts" },
+    { tag: "#NYSCJobs", count: "900 posts" },
   ];
 
   const jobs = [
+    { title: "Data Intern at FinEdge", location: "Remote" },
+    { title: "Web Developer (NYSC)", location: "Abuja" },
+    { title: "Data Intern at FinEdge", location: "Remote" },
+    { title: "Web Developer (NYSC)", location: "Abuja" },
     { title: "Data Intern at FinEdge", location: "Remote" },
     { title: "Web Developer (NYSC)", location: "Abuja" },
   ];
@@ -15,20 +22,24 @@ export default function Explore() {
   const events = [
     { title: "TechNYSC Meetup", date: "Oct 28" },
     { title: "Corps Hackathon", date: "Nov 5" },
+    { title: "TechNYSC Meetup", date: "Oct 28" },
+    { title: "Corps Hackathon", date: "Nov 5" },
+    { title: "TechNYSC Meetup", date: "Oct 28" },
+    { title: "Corps Hackathon", date: "Nov 5" },
   ];
 
   return (
-    <div className="text-white">
-      {/* Search */}
-      <div className="flex items-center bg-gray-800 rounded-full px-4 py-2 mb-6">
+    <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
+   
+      <div className="flex items-center gap-4 border-gray-700 border p-3 w-full rounded-xl mb-5">
         <Search className="text-gray-400 mr-2" size={18} />
         <input
           placeholder="Search posts, jobs, or events..."
-          className="bg-transparent outline-none w-full text-sm"
+          className="w-full focus:outline-none focus:ring-0"
         />
       </div>
 
-      {/* Trending Topics */}
+     
       <section className="mb-8">
         <h2 className="flex items-center gap-2 text-lg font-semibold mb-3">
           <TrendingUp size={18} /> Trending
@@ -46,7 +57,7 @@ export default function Explore() {
         </div>
       </section>
 
-      {/* Featured Jobs */}
+
       <section className="mb-8">
         <h2 className="flex items-center gap-2 text-lg font-semibold mb-3">
           <Briefcase size={18} /> Featured Jobs
@@ -55,8 +66,7 @@ export default function Explore() {
           {jobs.map((job, i) => (
             <div
               key={i}
-              className="bg-gray-900 hover:bg-gray-800 border border-gray-800 rounded-xl p-3"
-            >
+              className="bg-gray-900 hover:bg-gray-800 border border-gray-800 rounded-xl p-3" >
               <p className="font-medium">{job.title}</p>
               <p className="text-gray-400 text-sm">{job.location}</p>
             </div>
@@ -64,7 +74,7 @@ export default function Explore() {
         </div>
       </section>
 
-      {/* Upcoming Events */}
+     
       <section>
         <h2 className="flex items-center gap-2 text-lg font-semibold mb-3">
           <Calendar size={18} /> Upcoming Events

@@ -32,18 +32,16 @@ const posts = [
     <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
 
        
-      <div className="flex items-center gap-4 bg-gray-800 p-3 w-full rounded-xl mb-5">
-        <div className="rounded-full bg-green-600 w-12 h-12 flex items-center justify-center">
-          P
-        </div>
-        <Input placeholder="what's in your mind......" />
+      <div className="flex items-center gap-4 border-gray-700 border p-3 w-full rounded-xl mb-5">
+       <img src="" className="w-10 h-10 rounded-full bg-gray-600"        alt="avatar" />
+        <input className="w-full focus:outline-none focus:ring-0 " placeholder="what's in your mind......" />
       </div>
 
 
        {posts.map((post) => (
         <div
           key={post.id}
-          className="bg-gray-800 rounded-2xl p-5 mb-8">
+          className="bg-gray-900 rounded-2xl p-5 mb-8">
           <div className="flex items-center gap-3 mb-4">
 
             <img src="" className="w-10 h-10 rounded-full bg-gray-600"        alt="avatar" />
