@@ -15,7 +15,7 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <div className="h-screen bg-gray-900 border-r border-gray-800 flex flex-col justify-between p-2 w-[200px]">
+    <div className="h-screen bg-gray-900 border-r border-gray-800 flex flex-col justify-between p-2 w-[150px]">
 
       <div className="flex items-center flex flex-col mt-10 gap-2 mt-2">
       

@@ -22,6 +22,36 @@ const posts = [
       content:
         "This is another post with more detailed content and extra lines to show how the card scales beautifully.",
     },
+    {
+      id: 3,
+      username: "Jane Smith",
+      location: "Abuja",
+      batch: "Batch A1",
+      image:
+        "https://tse3.mm.bing.net/th/id/OIP.fxwj2e1PygHGYQDTyOQjVwHaE8?pid=Api&P=0&h=220",
+      content:
+        "This is another post with more detailed content and extra lines to show how the card scales beautifully.",
+    },
+    {
+      id: 4,
+      username: "Jane Smith",
+      location: "Abuja",
+      batch: "Batch A1",
+      image:
+        "https://tse3.mm.bing.net/th/id/OIP.fxwj2e1PygHGYQDTyOQjVwHaE8?pid=Api&P=0&h=220",
+      content:
+        "This is another post with more detailed content and extra lines to show how the card scales beautifully.",
+    },
+    {
+      id: 5,
+      username: "Jane Smith",
+      location: "Abuja",
+      batch: "Batch A1",
+      image:
+        "https://tse3.mm.bing.net/th/id/OIP.fxwj2e1PygHGYQDTyOQjVwHaE8?pid=Api&P=0&h=220",
+      content:
+        "This is another post with more detailed content and extra lines to show how the card scales beautifully.",
+    },
   ];
 
 
@@ -29,9 +59,8 @@ const posts = [
     <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
 
        
-      <div className="flex items-center gap-4 border-gray-700 border p-3 w-full rounded-xl mb-5">
-       <img src="" className="w-10 h-10 rounded-full bg-gray-600"        alt="avatar" />
-        <input className="w-full focus:outline-none focus:ring-0 " placeholder="what's in your mind......" />
+      <div className="p-4 items-center gap-4 border-gray-700 border p-3 w-full rounded-xl mb-5">
+      Welcome
       </div>
 
 
