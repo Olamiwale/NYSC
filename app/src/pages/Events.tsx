@@ -47,7 +47,7 @@ export default function Events() {
 
   return (
     <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
-      <h1 className="text-2xl font-bold flex justify-center mb-6">Upcoming Events</h1>
+      <h1 className="text-2xl font-bold flex justify-center mb-6 sticky top-0 bg-black p-4">Upcoming Events</h1>
 
       <div className="space-y-8">
         {events.map((event, i) => (

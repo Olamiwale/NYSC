@@ -31,7 +31,9 @@ export default function Explore() {
   return (
     <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
    
-      <div className="flex items-center gap-4 border-gray-700 border p-3 w-full rounded-xl mb-5">
+
+   <div className="bg-black fixed top-0 w-full p-8"></div>
+      <div className="sticky top-5 mb-8 flex items-center gap-4 border-gray-700 border p-3 w-full rounded-xl mb-5">
         <Search className="text-gray-400 mr-2" size={18} />
         <input
           placeholder="Search posts, jobs, or events..."

@@ -1,5 +1,3 @@
-import { Input } from "@/components/ui/input";
-
 export default function Post() {
 
 
@@ -27,7 +25,6 @@ const posts = [
   ];
 
 
-
   return (
     <div className="mt-10 mx-auto max-w-[600px] text-white flex flex-col justify-center p-4">
 
@@ -43,36 +40,19 @@ const posts = [
           key={post.id}
           className="bg-gray-900 rounded-2xl p-5 mb-8">
           <div className="flex items-center gap-3 mb-4">
-
             <img src="" className="w-10 h-10 rounded-full bg-gray-600"        alt="avatar" />
-
             <div className="flex gap-2">
               <p className="font-semibold text-white text-sm"> {post.username}</p>
               <p className="font-semibold text-sm text-gray-400"> | {post.location} | {post.batch}</p>
             </div>
-
           </div>
-
-
-
           <p className="text-gray-200 text-sm mb-4 leading-relaxed">
             {post.content}
           </p>
-          <img
-            src={post.image}
-            alt="post"
-            className="w-full h-72 object-cover rounded-lg"
+          <img src={post.image} alt="post"  className="w-full h-72 object-cover rounded-lg"
           />
         </div>
       ))}
-
-
-
-
-
-     
     </div>
   );
 }
-
-
